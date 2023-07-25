@@ -113,7 +113,7 @@ public class ProductTestController
     }
 
     [Fact]
-    public async Task DeleteUserAsync_ValidUserId_RemovesUser()
+    public async Task DeleteProductAsync_ValidProductId_RemovesProduct()
     {
         // Arrange
         var productToRemove = _fixture.Create<Product>();
