@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Product\" />
+    <ProjectReference Include="..\ProductHub.Domain\ProductHub.Domain.csproj" />
   </ItemGroup>
 
 </Project>

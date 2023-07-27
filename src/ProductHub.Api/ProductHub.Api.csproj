@@ -16,6 +16,11 @@
   <ItemGroup>
     <ProjectReference Include="..\ProductHub.Application\ProductHub.Application.csproj" />
     <ProjectReference Include="..\ProductHub.Infrastructure\ProductHub.Infrastructure.csproj" />
+    <ProjectReference Include="..\ProductHub.Application.Contracts\ProductHub.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
