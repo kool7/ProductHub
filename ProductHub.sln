@@ -7,21 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8053C5F5-C30
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.Api", "src\ProductHub.Api\ProductHub.Api.csproj", "{A22783E0-B7BD-4EF1-8430-DCDB0DACEE5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductHub.Application", "src\ProductHub.Application\ProductHub.Application.csproj", "{620C548F-7371-4A88-9817-5380276CF700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.Application", "src\ProductHub.Application\ProductHub.Application.csproj", "{620C548F-7371-4A88-9817-5380276CF700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductHub.Domain", "src\ProductHub.Domain\ProductHub.Domain.csproj", "{71ED65EA-0133-4315-BD40-148672BAC5C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.Domain", "src\ProductHub.Domain\ProductHub.Domain.csproj", "{71ED65EA-0133-4315-BD40-148672BAC5C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductHub.Infrastructure", "src\ProductHub.Infrastructure\ProductHub.Infrastructure.csproj", "{18F3822D-702D-4172-8394-799E0AA4CC5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.Infrastructure", "src\ProductHub.Infrastructure\ProductHub.Infrastructure.csproj", "{18F3822D-702D-4172-8394-799E0AA4CC5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{66D299C5-4CAE-48B9-A1A6-22EA6D7090F4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{7FCF02E9-EB2E-42C7-872A-551FAD56ED08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductHub.UnitTests", "tests\Unit\ProductHub.UnitTests\ProductHub.UnitTests.csproj", "{6D3ED8AF-3A49-41BD-AE3D-53BBF6A214D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.UnitTests", "tests\Unit\ProductHub.UnitTests\ProductHub.UnitTests.csproj", "{6D3ED8AF-3A49-41BD-AE3D-53BBF6A214D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{68C20521-5DC8-459C-BB59-3E3C23D786AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductHub.IntegrationTests", "tests\Integration\ProductHub.IntegrationTests\ProductHub.IntegrationTests.csproj", "{587012DB-AE1C-43A0-878C-5678E5E57DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.IntegrationTests", "tests\Integration\ProductHub.IntegrationTests\ProductHub.IntegrationTests.csproj", "{587012DB-AE1C-43A0-878C-5678E5E57DDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductHub.Application.Contracts", "src\ProductHub.Application.Contracts\ProductHub.Application.Contracts.csproj", "{45C3434B-D0ED-4A61-9077-19920FE5462E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{587012DB-AE1C-43A0-878C-5678E5E57DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{587012DB-AE1C-43A0-878C-5678E5E57DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{587012DB-AE1C-43A0-878C-5678E5E57DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C3434B-D0ED-4A61-9077-19920FE5462E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C3434B-D0ED-4A61-9077-19920FE5462E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C3434B-D0ED-4A61-9077-19920FE5462E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C3434B-D0ED-4A61-9077-19920FE5462E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,5 +72,9 @@ Global
 		{6D3ED8AF-3A49-41BD-AE3D-53BBF6A214D5} = {7FCF02E9-EB2E-42C7-872A-551FAD56ED08}
 		{68C20521-5DC8-459C-BB59-3E3C23D786AB} = {66D299C5-4CAE-48B9-A1A6-22EA6D7090F4}
 		{587012DB-AE1C-43A0-878C-5678E5E57DDB} = {68C20521-5DC8-459C-BB59-3E3C23D786AB}
+		{45C3434B-D0ED-4A61-9077-19920FE5462E} = {8053C5F5-C304-4DA4-8F7E-8827B0A7D5A1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9727F20D-6AFA-4738-8967-C9341501134C}
 	EndGlobalSection
 EndGlobal
