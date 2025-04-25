@@ -1,23 +1,29 @@
+using ProductHub.Api;
+using ProductHub.Api.Middlewares;
+using ProductHub.Application;
+using ProductHub.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    builder.Services
+        .AddPresentation()
+        .AddApplication()
+        .AddInfrastructure(builder.Configuration);
 }
 
-app.UseHttpsRedirection();
+var app = builder.Build();
+{
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
 
-app.UseAuthorization();
+    app.UseHttpsRedirection();
+    app.UseMiddleware<ProductHubExceptionHandlingMiddleware>();
+    app.UseAuthorization();
+    app.MapControllers();
+    app.Run();
+}
 
-app.MapControllers();
-
-app.Run();
+public partial class Program { }
